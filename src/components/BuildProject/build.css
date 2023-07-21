@@ -1,0 +1,63 @@
+.build{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10%;
+    padding: 3rem 10%;
+    margin: 10%; 
+    background: #EF7B20;
+    border-radius: 10px;
+}
+
+.build .buidContent{
+    color: #FFFFFF;
+    margin: auto 0;
+    text-align: left;
+}
+
+.build .buidContent p{
+    margin: 2rem 0;
+}
+
+.build .buidContent h1{
+    font-size: 2.5rem;
+}
+
+.build .buidContent button{
+   padding: 10px 20px;
+   background: #04162F;
+   color: #FFFFFF;
+   border: none;
+   font-size: 17px;
+   cursor: pointer;
+}
+
+.build .buildIllustration{
+    width: 70%;
+}
+
+.build img{
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 900px) {
+    .build{
+        flex-direction: column;
+        margin: 10% 5%; 
+    }
+
+    .build img{
+        width: 100%;
+    }
+
+    .build .buildIllustration{
+        width: 100%;
+    }
+}
+
+@media (max-width: 490px) {
+    .build{
+        margin: 20% 0; 
+        border-radius: 20px 0 0 0;
+    }
+}

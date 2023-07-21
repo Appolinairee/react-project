@@ -1,0 +1,47 @@
+.admintotal{
+    background: white;
+}
+
+.admin{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    position: relative;
+    flex-wrap: nowrap;
+    padding: 1rem 0;
+    overflow-x: hidden;
+    z-index: 3;
+    margin-top: 70px;
+}
+
+.adminbackground{
+    position: absolute;
+    top: 0; left: 0;
+    height: 53vh;
+    width: 100%;
+    z-index: 2;
+    background: var(--color-secondary-2);
+}
+
+.admin .overlay{
+    display: none;
+}
+
+
+@media (max-width: 900px) {
+    .admin{
+        display: block;
+        margin-top: 60px;
+    }
+
+
+    .admin .overlaybar{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        cursor: pointer;
+        background: rgba(0, 0, 0, 0.29);
+    }   
+}

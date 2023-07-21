@@ -1,0 +1,96 @@
+.newsletter{
+    padding: 5% 0;
+    margin: 7% 10%;
+    display: flex;
+    justify-content: space-between;
+    background: url('../../assets//Group\ 105.png') no-repeat;
+}
+
+.newsletter .newsletterForm form{
+    flex-direction: column;
+    gap: 35px;
+    margin: 50px 0;
+}
+
+.newsletter .newsletterForm form .input{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.newsletter .newsletterForm form .input input{
+    height: 45px;
+    border-radius: 5px;
+    border: 1px solid #020E35;
+    background-color: #F3FBE6;
+    color: #020E35;
+    padding: 0 10px;
+    font-size: 18px;
+}
+
+.newsletter .newsletterForm form .input input:focus{
+    outline: none;
+}
+
+
+@media (max-width: 1000px){
+    .newsletter{
+        padding: 5% 0;
+        margin: 7% 5%;
+    }
+}
+
+@media (max-width: 900px){
+   .newsletter{
+        flex-direction: column;
+   }
+
+   /* .newsletter .newsLeft{
+        z-index: 100;
+   } */
+   
+   .newsletter .newsletterForm form{
+        width: 60%;
+        float: left;
+   }
+
+   .newsRight{
+       position: absolute;
+       right: 0;
+       opacity: .8;
+       /* z-index: 2; */
+   }
+}
+
+
+@media (max-width: 600px){
+
+    .newsletter{
+        margin: 7% 0 0 10%;
+    }
+
+    .newsletter .newsletterForm form{
+        width: 70%;
+   }
+
+    .newsRight{
+       display: none;
+    }
+}
+
+@media (max-width: 490px){
+
+    .newsletter{
+        margin: 50px 0 50px 5%;
+    }
+
+    .newsletter .newsletterForm form{
+        width: 90%;
+        margin: 30px 0;
+   }
+
+    .newsRight{
+       display: none;
+    }
+}

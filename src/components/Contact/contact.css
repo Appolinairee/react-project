@@ -1,0 +1,125 @@
+.contact{
+    padding: 3rem 0%;
+}
+
+.contact .form{
+    max-width: 350px;
+    padding: 30px 30px;
+    box-shadow: 2px 2px 4px #00000049;
+    border-radius: 7px;    
+    margin: 0 auto;
+}
+
+.form form{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 15px;
+}
+
+.form form input, .form form textarea{
+    height: 40px;
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 15px;
+    border: 1px solid #00000065;
+}
+
+.form form textarea{
+    height: 80px;
+}
+
+.form form input:focus, .form form textarea:focus{
+    outline: none;
+}
+
+.form h3{
+    margin-bottom: 20px;
+}
+
+.form .btn{
+    width: 45%;
+    margin: 20px 0 0 55%;
+}
+
+@media (max-width: 450px) {
+    .form{
+        margin:  0 5%;
+    }
+
+    .form .btn{
+        width: 55%;
+        margin-left: 45%;
+    }
+}
+
+
+
+.contactDetails{
+    margin: 5rem 10% 0;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #FFF0E3;
+    color: #04162F;
+    border-radius: 5px;
+}
+
+.contactDetail{
+    padding: 20px 40px;
+    width: calc(100%/3);
+    cursor: pointer;
+}
+
+.contactDetail:nth-child(2){
+    background-color: #FFF0E3;
+}
+
+.contactDetail .contactDetailsTitle{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.contactDetail .contactDetailsTitle img{
+   width: 50px;
+   height: 50px;
+}
+
+@media (max-width: 700px) {
+    .contactDetails{
+        flex-direction: column;
+    }
+
+    .contactDetail{
+        width: 100%;
+    }
+
+    .contactDetail:nth-child(2){
+        text-align: right;
+    }
+
+    .contactDetail:nth-child(2) .contactDetailsTitle{
+        justify-content: end;
+        flex-direction: row-reverse;
+    }
+}
+
+
+@media (max-width: 450px){
+    .contactDetails{
+        margin: 5rem 5% 0;
+    }
+
+    .contactDetail{
+        padding: 15px 15px 20px;
+    }
+
+    .contactDetail .contactDetailsTitle{
+        margin-bottom: 10px;
+    }
+}
+

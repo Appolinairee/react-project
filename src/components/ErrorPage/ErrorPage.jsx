@@ -1,0 +1,14 @@
+import React from 'react'
+
+const ErrorPage = () => {
+  return (
+    <div className='errorpage'>
+
+        <h1>Page non trouvée</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit nulla, rerum facilis magni, cum esse ipsam natus ipsum ratione saepe quo possimus, vero assumenda. Tempora, natus aperiam! Facere, accusamus delectus. Soluta accusantium, esse dignissimos fuga dolorem laudantium consequuntur architecto, id doloremque, nisi dolores! Voluptates aperiam minima qui facilis dolor error voluptatum cumque quos repudiandae, quod modi consequatur, officia voluptas optio provident, repellendus laboriosam quo. Libero, voluptatibus. Adipisci velit esse nihil molestiae rerum? Nulla repudiandae, perspiciatis sapiente velit ratione provident ducimus molestias obcaecati voluptates praesentium odit quis dolorem consectetur aspernatur cupiditate et dolores iure quidem minima error. Nihil eos dignissimos quisquam iusto rerum impedit iste obcaecati sunt culpa libero quos magni praesentium vitae voluptate commodi, officiis ut deserunt laborum recusandae dolore illo repellat excepturi consequatur. Minima quia saepe voluptatibus asperiores corrupti error nulla porro iure, impedit provident est iusto debitis adipisci sunt ipsam. Quod rem, assumenda quasi ab dolores ipsum pariatur iste aliquam consequuntur doloremque hic sint modi aut? Aperiam perspiciatis eius iure quia vel aut blanditiis laudantium qui id, voluptatibus odio, rem commodi assumenda deleniti adipisci consequatur, omnis reprehenderit voluptate dolore. Dolorem autem hic incidunt. Iure asperiores exercitationem quis nihil incidunt tempora? Aspernatur sint quae odit unde nulla aut iste maiores culpa enim, dolorum labore ex repellat dolorem laborum hic, sequi quasi error cum consequatur quibusdam corporis! Rem neque eius quae voluptatibus, laudantium, at nisi voluptas consequuntur esse tenetur maxime? Modi minima tempora mollitia repellendus molestiae obcaecati dicta quia sed. Iure beatae iste, officia adipisci temporibus harum ducimus accusamus dignissimos nesciunt possimus vitae eius suscipit? Voluptates ab ratione optio ipsa commodi possimus doloremque vitae. Quia tempora aperiam, eligendi illum voluptas nemo quod facere commodi, perferendis maiores sapiente, quis quo. Optio consectetur, blanditiis omnis illo porro aspernatur possimus ipsa, commodi quibusdam eos aperiam quis ex veniam voluptatibus officia! Porro optio veniam, odit repellat possimus officiis molestias autem voluptatem ducimus eaque explicabo voluptatum necessitatibus debitis sunt modi incidunt ea, illo animi enim quos provident harum tempore ab rem. Corrupti culpa quis voluptate quaerat sapiente odit obcaecati quod optio consequuntur harum recusandae, numquam ab enim placeat totam!</p>
+        <p>Vous pouvez revérifier le lien entré ou contacter Alitcha</p>
+    </div>
+  )
+}
+
+export default ErrorPage;

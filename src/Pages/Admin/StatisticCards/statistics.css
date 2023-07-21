@@ -1,0 +1,63 @@
+.statcars{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.statcars .statcard{
+    border-radius: 10px;
+    background: white;
+    padding: 15px;
+    margin: 0 5%;
+    box-shadow: 2px 2px 2px var(--color-secondary);
+    transition: .2s ease;
+    cursor: pointer;
+}
+
+.statcars .statcard:hover{
+    box-shadow: unset;
+}
+
+.statcars .statcard h3{
+    color: #67748e;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.statcars .statcard b{
+    font-size: 18px;
+    margin: 5px 0 7px;
+}
+
+.statcars .statcard p{
+    margin-top: 10px;
+}
+
+.statcars .statcard p span{
+    font-weight: bold;
+}
+
+.statcars .statcard .icon{
+    color: white;
+    padding: 7px;
+    border-radius: 50%;
+    background: #5E72E4;
+    width: 47px; height: 40px;
+    margin: -7px 0px;
+}
+
+@media (max-width: 1000px) {
+    .statcars{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .statcars .statcard{
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .statcars{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

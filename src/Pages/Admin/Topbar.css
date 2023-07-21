@@ -1,0 +1,135 @@
+.topbar{
+    padding: 3vh 5% 4vh 10px;
+    color: white;
+    line-height: 30px;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.icon{
+    cursor: pointer;
+}
+
+.topbar .topbarTitle{
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.topbar .topbarTitle b{
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.topbar .topbarTitle p a{
+    color: rgb(255, 255, 255, 0.7);
+    font-weight: 300;
+}
+
+.topbar .topbarContent{
+    
+}
+
+.topbar .topbarContent .searchInput{
+    position: relative;
+    height: 40px;
+    align-items: center;
+    color: rgb(255, 255, 255, 0.7);
+}
+
+.topbar .topbarContent .searchInput input{
+    height: 100%;
+    padding: 5px 5px 3px 40px;
+    border: none;
+    border-radius: 7px;
+    box-shadow: 2px 1px 2px rgb(255, 255, 255, 0.7),
+    -2px -2px 2px rgb(255, 255, 255, 0.7);
+}
+
+.topbar .topbarContent .searchInput input::placeholder{
+    font-size: 17px;
+}
+
+.topbar .topbarContent .searchInput input:focus{
+    outline: none;
+    box-shadow: unset;
+}
+
+.topbar .topbarContent .searchInput .icon{
+    position: absolute;
+    left: 10px; top: 7px;
+    height: 25px;
+    font-size: 18px;
+    color: gray;
+}
+
+.topbar .topbarContent .topbarTools{
+    margin-top: 10px;
+    gap: 15px;
+    margin-left: 25px;
+    font-size: 16px;
+}
+.topbar .topbarContent .topbarTools .icon{
+    padding: 2px;
+}
+
+.topbar .topbarContent .topbarTools .signBtn p{
+    margin-top: -2px;
+}
+
+.topbar .topbarContent .topbarTools .menuBtn{
+    display: none;
+}
+
+@media (max-width: 900px){
+    .topbar{
+        padding: 3vh 10% 7vh 10%;
+        flex-direction: column;
+        justify-content: start;
+        line-height: 20px;
+    }
+
+    .topbar .topbarTitle{
+        margin-bottom: 10px;
+    }
+
+    .topbar .topbarContent{
+        align-items: center;
+        width: 100%;
+    }
+
+    .topbar .topbarContent .topbarTools{
+        margin: 0;
+        gap: 10px;
+        font-weight: 900;
+    }
+
+    .topbar .topbarContent .topbarTools .icon{
+        padding: 2px;
+    }
+
+    .topbar .topbarContent .topbarTools .signBtn p{
+        display: none;
+    }
+
+    .topbar .topbarContent .topbarTools .menuBtn{
+        display: block;
+    }
+}
+
+@media (max-width: 490px){
+    .topbar{
+        padding: 4vh 5% 5vh 5%;
+    }
+
+    .topbar .topbarContent .searchInput input{
+        width: 80%;
+    }
+    .topbar .topbarContent .searchInput:hover input{
+        width: 130%;
+    }
+}

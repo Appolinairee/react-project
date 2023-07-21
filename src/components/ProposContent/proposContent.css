@@ -1,0 +1,292 @@
+.proposContent{
+    padding: 4rem 10%;
+}
+
+.proposContent span{
+    color: #EF7B20;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.proposContent .proposTitle{
+    margin: 2rem 0;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10%;
+    font-size: 17px;
+}
+
+.proposContent .proposTitle h1{
+    white-space: nowrap;
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.proposContent .proposTitle p{
+    width: 50%;
+}
+
+
+@media (max-width: 900px) {
+    .proposContent{
+        padding: 2rem 10%;
+    }
+
+    .proposContent .proposTitle{
+        flex-direction: column;
+    }
+
+    .proposContent .proposTitle h1{
+        white-space: break-spaces;
+    }
+
+    .proposContent .proposTitle h1 br{
+        display: none;
+    }
+
+    .proposContent .proposTitle p{
+        width: 100%;
+        /* line-height: 27px; */
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 450px){
+    .proposContent{
+        padding: 2rem 5%;
+    }   
+
+    .proposContent .proposTitle{
+        margin: 1.3rem 0;
+    }
+
+    .proposContent .proposTitle h1{
+        font-size: 2rem;
+    }
+
+    .proposContent .proposTitle p{
+        /* line-height: 25px; */
+        font-size: 15px;
+    }
+}
+
+/* STYLES DU CONTENU TEXTE */
+.proposDescription{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 5%;
+    margin: 4rem 0 8rem;
+}
+
+.proposDescription .proposContentText{
+    width: 50%;
+    font-size: 17px;
+}
+
+.proposDescription .proposContentText h4{
+    color: #EF7B20;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0 0 35px;
+}
+
+.proposDescription .proposContentText b{
+    font-size: 18px;
+}
+
+.proposDescription .proposContentText p{
+    margin: 20px 0 0;
+}
+
+.proposDescription .proposContentCard{
+    border: .5px solid #FFF1EA;
+    border-left: none;
+    padding: 20px 30px 0 50px;
+    border-radius: 0 10px 10px 0;
+}
+
+.proposDescription .proposContentCard:nth-child(2n){
+   box-shadow: 5px 5px 5px rgba(57, 20, 0, 0.06);
+   transform: translateX(20%);
+   border-radius: 10px;
+   border: .5px solid #FFF1EA;
+   padding: 20px 30px 0 50px;
+}
+
+.proposDescription .proposContentCard h4{
+    margin: 15px 0px 20px 0;
+}
+
+.proposDescription .proposContentCard img{
+    width: 50px;
+    height: 50px;
+}
+
+@media (max-width: 800px){
+    .proposDescription{
+        flex-direction: column;
+    }
+
+    .proposDescription .proposContentText{
+        width: 100%;
+    }
+
+    .proposDescription .proposContentCard{
+        border-top: none;
+    }
+
+    .proposDescription .proposContentCard p{
+        margin-bottom: 25px;
+    }
+
+    .proposDescription .proposContentCard:nth-child(2n){
+        transform: none;
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 490px){
+    .proposDescription .proposContentText{
+        font-size: 15px;
+    }
+
+    .proposDescription .proposContentCard p{
+        margin-bottom: 10px;
+    }
+
+    .proposDescription .proposContentCard, .proposDescription .proposContentCard:nth-child(2n){
+        padding: 20px;
+    }
+}
+
+/* SYLE OF STATIQTIQUE PRESENTATION */
+
+.proposStats{
+    display: flex;
+    flex-wrap: nowrap;
+    border: 1px solid #FFF1EA;
+    border-radius: 7px;
+    color: rgba(57, 20, 0, 1);
+}
+
+.proposStats .proposStatsUnit{
+    padding: 20px 40px;
+    width: calc(100%/3);
+}
+
+.proposStats .proposStatsUnit span{
+    font-size: 2.3rem;
+    font-weight: 900;
+    color: black;
+}
+
+.proposStats .proposStatsUnit p{
+    margin-top: 12px;
+}
+
+.proposStats .proposStatsUnit:nth-child(2){
+    background: #FDF0E9;
+    border: 1px solid rgba(243, 209, 191, 1);
+}
+
+@media (max-width: 800px){
+    .proposStats{
+        flex-direction: column;
+    }
+
+    .proposStats .proposStatsUnit{
+        width: 100%;
+    }
+
+    .proposStats .proposStatsUnit:nth-child(2){
+       text-align: right;
+    }
+}
+
+@media (max-width: 450px){
+    .proposDescription{
+        margin: 4rem 0 6rem;
+    }
+
+    .proposStats .proposStatsUnit{
+        padding: 15px 30px;
+    }
+}
+
+
+/* PRESENTATION OF ALITCHA FOUNDER */
+
+.presentation{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin: 5rem 0;
+    gap: 10%;
+    align-items: center;
+}
+
+.presentation img{
+    width: 20vw;
+    margin-bottom: 30px;
+    transition: .2s ease;
+    cursor: pointer;
+}
+
+.presentation img:hover{
+    transform: scale(1.1);
+}
+
+.presentation .presentationIllus{
+    text-align: center;
+}
+
+.presentation .presentationIllus h2 b{
+    color: #EF7B20;
+}
+
+.presentation .presentationDescrip{
+    font-size: 19px;
+    font-weight: normal;
+    border-left: 2px solid rgba(0, 0, 0, 0.201);
+    padding: 25px;
+    border-radius: 0 0 10px 10px;
+    padding-left: 10%;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.101);
+}
+
+.presentation .presentationDescrip p{
+    margin-bottom: 30px;
+    color: rgba(4, 22, 47, 0.884);
+}
+
+.presentation .presentationDescrip span{
+    color: black;
+    text-transform: capitalize;
+    letter-spacing: normal;
+    color: rgba(4, 22, 47, 0.884)
+}
+
+@media (max-width: 800px){
+    .presentation{
+        flex-direction: column;
+    }
+
+    .presentation .presentationDescrip{
+        margin-top: 30px;
+        border-top: 2px solid rgba(0, 0, 0, 0.101);
+        border-left: none;
+        padding-top: 10%;
+        padding-left: 30px;
+    }
+}
+
+@media (max-width: 490px) {
+    .presentation .presentationDescrip{
+        padding-left: 10px;
+    }
+
+    .presentation .presentationDescrip p{
+        font-size: 16px;
+    }
+}

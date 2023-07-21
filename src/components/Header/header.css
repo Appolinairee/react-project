@@ -1,0 +1,41 @@
+.header{
+    padding: 2rem 0;
+    background: #FAFAFA;
+}
+
+.header .realisationTitle{
+    margin: 6% 25% 3%;
+    font-size: 16px;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.header .realisationTitle h1{
+    font-size: 3.8rem;
+    margin-bottom: 1rem;
+    white-space: nowrap;
+    color: #04162F;
+    text-transform: uppercase;
+}
+
+
+@media (max-width: 800px) {
+    .header .realisationTitle{
+        margin: 3% 10%;
+    }
+
+    .header .realisationTitle h1{
+        white-space: wrap;
+        font-size: 9vw;
+    }
+}
+
+@media (max-width: 500px){
+    .header .realisationTitle{
+        margin: 4% 10px;
+    }
+
+    .header .realisationTitle p{
+       margin:  0 5%;
+    }
+}

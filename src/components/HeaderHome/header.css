@@ -1,0 +1,197 @@
+.header .headerContent{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: calc(2% + 50px) 0% 5.5% 5%;
+    color: #212C4F;
+    background: url('../../assets//Container.png') center/cover  no-repeat;
+}
+
+.header .headerContent .headerText{
+    padding: 7rem 1% 0 0;
+    width: 100%;
+}
+
+.header .headerContent .headerText span{
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+.header .headerContent .headerText h1{
+    font-size: 3rem;
+    margin: 12px 0 20px;
+    white-space: nowrap;
+}
+
+.header .headerContent .headerText h1 b{
+    color: #EF7B20;
+    font-weight: 300;
+}
+
+.header .headerContent .headerText p.description{
+    color: #212C4FB2;
+    font-size: 19px;
+}
+
+/*Button styles and hover&&focus animations */
+.header .headerContent .btn{
+    background-color: #04162F;
+    border-radius: 25px;   
+    padding: 10px 15px 10px 20px;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    margin: 30px 0;
+    transition: all .3s ease;
+}
+
+.header .headerContent .btn a{
+    color: #C8D6B1;
+    font-size: 17px;
+}
+
+.header .headerContent .btn:hover{
+   background: white;
+   box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.3);  
+   word-spacing: 3px;
+    gap: 15px;  
+}
+
+.header .headerContent .btn:hover a{ color: #04162F; }
+
+.header .headerContent .btn:focus{
+    word-spacing: 2px;
+    gap: 10px;  
+    box-shadow: unset;
+}
+
+
+/* HEADER ILLUSTRATIONS */
+
+.header .headerIllustration{  
+    position: relative;
+    width: 100%;
+
+}
+
+.header .headerIllustration img{  
+    height: 75vh;
+}
+
+.illusRespons{
+    display: none;
+}
+
+
+@media (max-width: 1200px){
+    .header .headerIllustration{  
+        position: relative;
+        max-width: 50vw;
+    }
+    
+    .header .headerIllustration img{  
+        height: 70vh;
+        width: 100%;
+    }
+}
+
+@media (max-width: 950px){
+    .header .headerContent{
+        background: url('../../assets//Container.png')  no-repeat;
+        padding: calc(2% + 60px) 5% 0%;
+    }
+
+    .header .headerContent .headerText{
+        padding: 3rem 0;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .header .headerContent .headerTextTitle{
+        padding: 0 10%;
+    }
+
+    .header .headerContent{
+        flex-direction: column;
+    }
+
+    .header .headerIllustration{
+        display: none;
+    }
+
+    .illusRespons{
+        display: block;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .illusRespons img{
+       width: 100%;
+    }
+
+    .header .headerContent .headerText p.description{
+        padding: 0  10%;
+        font-size: 19px;
+    }
+
+    .header .headerContent .btn{
+        margin: 30px auto;
+    }
+}
+
+@media (max-width: 760px){
+    .header .headerContent .headerText p.description{
+        padding: 0  0 0 5%;
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 450px){
+    .header .headerContent{
+        padding: calc(2% + 40px) 0% 0%;
+    }
+
+    .header .headerContent .headerText h1{
+        font-size: 2rem;
+        margin: 12px 0 20px;
+        white-space: nowrap;
+    }
+
+    .header .headerContent .headerTextTitle{
+        text-align: center;
+        padding: 0;
+    }
+
+    .header .headerContent .headerTextTitle span{
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .header .headerContent .headerText p.description{
+        padding: 0 10px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 270px){
+
+    .header .headerContent .headerText h1{
+        font-size: 1.5rem;
+    }
+
+    .header .headerContent .headerTextTitle span{
+        font-size: 13px;
+    }
+
+    .header .headerContent .headerText p.description{
+        padding: 0 10px;
+        font-size: 14px;
+    }
+
+    .header .headerContent .btn{
+        padding: 7px 12px;
+        font-size: 13px;
+    }
+}

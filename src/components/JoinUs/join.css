@@ -1,0 +1,11 @@
+.inputCV{
+  text-align: left;
+}
+
+#cv{
+    border: none;
+    cursor: pointer;
+    margin-top: 7px;
+    margin-left: -10px;
+    background: none;
+}

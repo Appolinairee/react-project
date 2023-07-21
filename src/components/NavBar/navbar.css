@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600&display=swap');
+
+.navbar{
+    position: fixed;
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    justify-content: space-around;
+    padding: 15px 0;
+    align-items: center;
+    background: white;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    border-radius: 0 0 15px 15px;
+}
+
+/*Styles for list*/
+.navbar .navbarList ul{
+    font-size: 17px;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 25px;
+    text-transform: capitalize;
+}
+
+.navbar .navbarList ul li{transition: .2s ease;}
+
+.navbar .navbarList ul li:hover{
+    transform: scale(1.1) rotate(-1deg);
+}
+
+.navbar .navbarList ul a{
+    color: #212C4F;
+    white-space: nowrap;
+    transition: all .2s ease;
+}
+
+.navbar .navbarList ul a.active{
+   color: #EF7B20;
+   position: relative;
+   font-weight: 700;
+}
+
+.navbar .navbarList ul a.active:after{
+   content: '';
+   position: absolute;
+   left: 0;
+   bottom: -5px;
+   background: #EF7B20;
+   width: 45%;
+   height: 2px;
+   border-radius: 5px;
+}
+
+/*Styles for buttons*/
+
+.navbar .btn{
+    padding: 12px 25px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #EF7B20;
+    align-items: center;
+    border-radius: 25px;
+    font-weight: 600;
+    word-spacing: 2px;
+    transition: all .3s ease;
+    position: relative;
+} 
+
+.navbar .btn a{
+    color: #FFFFFF;
+    white-space: nowrap;
+}
+
+.navbar .btn:hover a{
+    color: #212C4F;
+    /* font-weight: 500; */
+}
+
+.navbar .btn:hover{
+    background-color: transparent;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2),
+                -4px -4px 6px rgba(0, 0, 0, 0.2);    
+}
+
+.navbar .btn:focus-visible{
+    box-shadow: unset;
+    background: #EF7B20;
+}
+
+.navbar .btnForResponsive{
+    display: none;
+}
+
+.navbar .icon{
+    display: none;
+}
+
+.navbaroverlay{
+    opacity: 0;
+    z-index: 0;
+    display: none;
+}
+
+@media (max-width: 1025px){
+    .navbar{
+        justify-content: space-between;
+        margin: 0;
+        padding: 10px 30px;
+        display: flex;
+        width: 100%;
+    }
+
+    .navbar .btn{
+        display: none;
+    }
+
+    .navbar .togglenavbar{
+        border: solid rgba(0, 0, 0, 0.0);
+        border-radius: 5px;
+        transition: .2s ease;
+    }
+
+    .navbar .togglenavbar:hover{
+        background: rgba(0, 0, 0, 0.05);
+    }
+
+    .navbar .btnForResponsive{
+        display: block;
+        margin: 30px auto 15px;
+    }
+
+    .navbar .icon{
+       display: block;
+    }
+
+    .navbar .menu{
+        position: fixed;
+        display: flex;
+        background: #FFFFFF;
+        border-radius: 10px 0 10px 10px;
+        flex-direction: column;
+        width: 80%;
+        left: 50%;
+        max-width: 400px;
+        top: 50%;
+        transform: translate(-50%, -1000px);
+        text-align: center;
+        z-index: 100;
+        padding: 25px 20px 0;
+        margin: auto;
+        transition: .3s ease;
+    }
+
+    .menu .navbarList ul{
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .menu .navbarList ul li{
+       border-bottom: .5px solid rgba(0, 0, 0, 0.1);
+       padding: 15px 0;
+       cursor: pointer;
+    }
+
+    .menu.menuActif{
+        transform: translate(-50%, -50%);
+    }
+
+    .navbar .navbaroverlay{
+        position: fixed;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        background: rgb(2, 15, 29);
+        z-index: 55;
+        opacity: .6;
+    }
+
+    .menu .navbarcloser{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+}
+
+@media (max-width: 490px){
+    .navbar{
+        justify-content: space-between;
+        margin: 0;
+        padding: 10px 15px;
+        display: flex;
+        width: 100%;
+    }
+
+
+    .navbar .logoDiv img{
+        width: 130px;
+    }
+
+    .navbar .menu{
+        width: 90%;
+        max-width: 100%;
+        transform: translate(-50%, -1000px);
+        margin: auto;
+    }
+
+    .menu.menuActif{
+        transform: translate(-50%, -50%);
+    }
+
+    .menu .navbarList ul li{
+        padding: 13px 0;
+     }
+}
+

@@ -1,0 +1,160 @@
+.realisations{
+    padding: 5% 15% 15%;
+}
+
+.realisations h2{
+   color: #EF7B20;
+   text-align: center;
+   font-weight: 300;
+}
+.realisations h1{
+   text-align: center;
+    margin: 10px 0 30px;
+    font-size: 2rem;
+}
+
+.realisationAll{
+    display: flex;
+    gap: 5%;
+}
+
+.realisationAll .realisationList{
+    line-height: 60px;
+}
+
+.realisationAll .realisationList li{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    white-space: nowrap;
+    cursor: pointer;
+    font-weight: bold;
+    transform: translateX(-40px);
+    transition: .2s ease;
+}
+
+.realisationAll .realisationList li img{
+    transform: translateX(-100px);
+    transition: .2s ease .1s;
+    opacity: 0;
+}
+
+.realisationAll .realisationList li.actif{
+    color: #EF7B20;
+    transform: translateX(0px);
+}
+
+.realisationAll .realisationList li.actif img{
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+.realisationsDesc{
+    border-left: 1px solid rgba(0, 0, 0, 0.521);
+    padding-left: 5%;
+    padding-top: 20px;
+}
+
+.realisationDesc{
+   margin-bottom: 20px;
+}
+
+.realisationDesc p{
+  margin-top: 10px;
+  font-size: 17px;
+  color: #212C4FB2;
+}
+
+@media (max-width: 1000px){
+    .realisations{
+        padding: 30px 10%;
+    }
+}
+
+@media (max-width: 800px){ 
+    .realisations{
+        padding: 30px 5%;
+    }
+
+    .realisationAll{
+        flex-direction: column;
+        gap: 5%;
+    }
+
+    .realisationAll .realisationList{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .realisationsDesc{
+        border: none;
+        border-top: 1px solid rgba(0, 0, 0, 0.521);
+    }
+
+    .realisationDesc b{
+        /* background: #212c4f2a; */
+        border-radius: 5px;
+        padding: 7px 10px;
+        margin-left: -5%;
+        border: .1px solid rgba(0, 0, 0, 0.05);
+    }
+}
+
+@media (max-width: 490px){
+
+    .realisationAll .realisationList li{
+        gap: 5px;
+    }
+
+    .realisationAll .realisationList{
+        gap: 10px;
+        line-height: 25px;
+        margin-bottom: 15px;
+    }
+
+     .realisations h2{
+        font-size: 1.5rem;
+     }
+
+     .realisations h1{
+         font-size: 1.6rem;
+     }
+
+    .realisationAll .realisationList li{
+        font-size: 14px;
+    }
+
+    .realisationDesc p{
+       font-size: 15px;
+    }
+
+    .realisationsDesc{
+        padding: 20px 10px 0;
+    }
+
+    .realisationAll .realisationList li img{
+        display: none;
+    }
+
+    .realisationAll .realisationList li{
+        transform: translateX(0px);
+        transition: .2s ease;
+    }
+
+    .realisationAll .realisationList li.actif{
+        position: relative;
+    }
+
+    .realisationAll .realisationList li.actif::after{
+        content: '';
+        position: absolute;
+        bottom: 0px; left: 0;
+        background: #ef7a20a1;
+        width: 30px;
+        height: 3px;
+        border-radius: 0 50px 0 0;
+    }
+
+}
+

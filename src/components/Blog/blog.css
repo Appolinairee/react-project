@@ -1,0 +1,92 @@
+.blogs{
+    margin: 5rem 0;
+    padding: 2rem 5%;
+    background: #FAFAFA;
+}
+
+.blogs .blogsTitle{
+    position: relative;
+}
+
+.blogs .blogsTitle span{
+    color: #EF7B20;
+    font-size: 1.3rem;
+}
+
+.blogs .blogsTitle h2{
+    margin: 10px 0 30px;
+    font-size: 1.9rem;
+    line-height: 45px;
+}
+
+.blogs .btn{
+  margin: 0 auto;
+
+}
+
+.blogs .blogButtons{
+    position: absolute;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+    bottom: -30px;
+    right: 7%;    
+}
+
+
+.blogs .blogButtons img{
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+.blogs .blogButtons img:hover{
+    transform: scale(1.1);
+}
+
+.blogs .blogsContent{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+    margin: 3rem 0 0;
+    gap: 20px;
+    scroll-behavior: smooth;
+    scroll-snap-type: mandatory;
+}
+
+.blogs .blogsContent::-webkit-scrollbar{
+   display: none;
+}
+
+@media (max-width: 800px){
+    .blogs{
+        padding: 2rem 5%;
+    }
+
+    .blogs{
+        margin: 13rem 0 7rem;
+    }
+
+    .blogs .blogButtons{
+        right: 5%;    
+    }
+
+    .blogs .blogsTitle h2{
+        line-height: 30px;
+    }
+}
+
+@media (max-width: 490px){
+    .blogs .blogsTitle h2{
+        font-size: 1.5rem;
+    }
+
+    .blogs .blogButtons{
+        bottom: -50px;    
+    }
+
+    .blogs .blogsTitle h2{
+        line-height: 25px;
+    }
+}

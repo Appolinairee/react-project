@@ -1,0 +1,227 @@
+.adminber{
+    position: relative;
+}
+
+.overlayUpdateElt{
+    position: fixed;
+    top: 0; left: 0;
+    background: rgb(0, 0, 0, 0.7);
+    width: 100%; height: 100%;
+    z-index: 1300;
+}
+
+.adminber .editForm{
+    background: white;
+    border-radius: 10px;
+    padding: 2rem 3rem;
+    margin-right: 2rem;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.231);
+}
+
+.editForm h2{
+    margin: 0px 0 20px;
+    font-size: 1.3rem;
+}
+
+.adminber .editForm .flex{
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+
+.adminber .editForm form .input, .adminber .editForm form textarea, .adminber .editForm .inputImage{
+    height: 45px;
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 0 10px;
+    border: .5px solid #020e3563;
+    background-color: #F3FBE6;
+    color: #020E35;
+    padding: 0 10px;
+    font-size: 17px;
+    border-radius: 5px;
+}
+
+.adminber .editForm form input:focus, .adminber .editForm form textarea:focus{
+   outline: none;
+}
+
+.adminber .editForm form textarea:focus{
+    height: 100px;
+    padding: 10px;
+}
+
+.adminber .editForm form textarea{
+    padding-top: 10px;
+}
+.adminber .editForm.updateForm .flex{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.adminber .editForm.updateForm{
+    position: fixed;
+    top: 20vh;
+    left: auto;
+    z-index: 1400;
+}
+
+@media (max-width: 900px) {
+    .adminber .editForm{
+        margin: 0 2rem ;
+    }
+
+    .adminber .editForm .flex{
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .adminber .editForm{
+        padding: 20px 10px;
+        margin: 0 15px;
+    }
+
+    .adminber .editForm .flex{
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+}
+
+.elements{
+    background: white;
+    border-radius: 10px 10px 0 0;
+    padding: 1.5rem 2rem;
+    margin: 3rem 2rem 0rem 0;
+    text-align: center; 
+}
+
+.elements h2{
+    text-align: left;
+    text-transform: capitalize;
+    margin-bottom: 20px;    
+    font-size: 1.3rem;
+}
+
+.elements .questionContent{
+    border-top: 1px solid rgb(227, 244, 199);
+    border-bottom: 1px solid rgb(239, 250, 220);
+    padding: 30px 0px 0px;
+    height: 60px;
+    overflow: hidden;
+    background: #f3d1bf17;
+    transition: height .2s ease;
+}
+
+.elements .questionContent p{
+    display: none;
+}
+
+.elements .questionContent.actif p{
+    display: block;
+}
+
+.elements .questionContent.actif{
+    overflow: visible;
+    height: 100%;
+    background: white;
+   padding-bottom: 30px;
+}
+
+.elements .questionContent .contentTitle{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    color: #020e35ad;
+}
+
+.elements .questionContent .contentTitle img{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transform: rotate(180deg);
+    transition: .2s ease;
+}
+
+.elements .questionContent .contentTitle:hover img{
+    transform: scale(1.1);
+}
+
+.elements .questionContent.actif img{
+    transform: rotate(0deg);
+}
+
+.elements .contentTitle p{
+    color: rgb(0, 0, 0,0.3);
+    font-weight: 600;
+    transition: .2s ease;
+    cursor: pointer;
+}
+
+.elements .contentTitle p:hover{
+    color: #ef7a20b1;
+}
+
+.elements .contentDetails{
+    padding: 0 5%;
+}
+
+.elements .contentDetails p{
+    margin-top: 10px;
+}
+
+.elements .description{
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.elements .description p{
+    font-size: 18px;
+    text-align: left;
+    margin: 0 0 0 10% ;
+    color: rgb(0, 0, 0,0.7);
+}
+
+@media (max-width: 900px) {
+
+    .elements{
+        flex-direction: column;
+        padding: 1.5rem;
+        margin: 4rem 5%;
+    }
+
+    .elements .questionsContent{
+        width: 100%;
+        margin: 40px 0;
+        padding: 0;
+    }
+
+    .elements .questionContent{
+        padding: 20px 0px 0px;
+        height: 60px;
+    }
+
+    .elements .questionContent h3{
+        font-size: 16px;
+    }
+
+    .elements .contentDetails{
+        flex-direction: column;
+        padding: 0;
+        gap: 20px;
+    }
+
+    .elements .contentTitle p{
+        font-size: 15px;
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 450px) {
+    .elements{
+        padding: 5rem 5%;
+    }
+}

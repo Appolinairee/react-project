@@ -1,0 +1,37 @@
+.btn{
+    background-color: #04162F;
+    padding: 13px 15px 13px 20px;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    transition: all .3s ease;
+}
+
+.btn a{
+    color: #C8D6B1;
+    font-size: 17px;
+}
+
+.btn:hover{
+   background: white;
+   box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.3);  
+   word-spacing: 3px;
+    gap: 15px;  
+}
+
+.btn:hover a{ color: #04162F; }
+
+.btn:focus{
+    word-spacing: 2px;
+    gap: 10px;  
+    box-shadow: unset;
+}
+
+@media (max-width: 800px){
+    .btn{
+        padding: 10px 15px 10px 20px;
+    }
+
+}
